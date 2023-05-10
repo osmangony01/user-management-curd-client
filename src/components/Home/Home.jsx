@@ -1,9 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import './Home.css';
 import { FaPen, FaTimes, FaUser } from 'react-icons/fa';
+import { useState } from 'react';
+import User from './User';
 
 
 const Home = () => {
+
+    const loadedUsers = useLoaderData();
+    const [users, setUsers] = useState(loadedUsers);
+
     return (
         <div className='home'>
             <div><Link to="/addUser"><button className='new-user'>New User <FaUser ></FaUser> </button></Link></div>
@@ -20,22 +26,14 @@ const Home = () => {
                         </tr>
                     </thead>
                     <tbody className='user-tbody'>
-                        <tr>
-                            <td>1</td>
-                            <td>kahini</td>
-                            <td>kahini@gmail.com</td>
-                            <td>male</td>
-                            <td>active</td>
-                            <td><button className='active-btn'><FaPen></FaPen></button> <button  className='active-btn'><FaTimes></FaTimes></button></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>kahini</td>
-                            <td>kahini@gmail.com</td>
-                            <td>male</td>
-                            <td>active</td>
-                            <td><button><FaPen></FaPen></button> <button><FaTimes></FaTimes></button></td>
-                        </tr>
+                        {
+                            users.map(user => <User
+                                key={user._id}
+                                user={user}
+                                users={users}
+                                setUsers={setUsers}
+                            ></User>)
+                        }
                     </tbody>
                 </table>
             </div>
