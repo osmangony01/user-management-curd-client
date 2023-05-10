@@ -1,0 +1,68 @@
+.add-user-panel{
+    padding: 50px 100px;
+}
+.add-user-form{
+    width: 60%;
+    margin: 0 auto;
+}
+.add-user-title{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.add-user-info{
+    padding: 20px 0;
+    text-align: center;
+}
+.input-control{
+    padding: 10px;
+    border: 0;
+    border-radius: 4px;
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+    outline: 0;
+    border: 1px solid #ebe0e0;
+}
+.input-control:focus{
+    border: 1px solid blue;
+}
+.input-label{
+    margin-top: 20px;
+    display: block;
+}
+
+.add-user-btn{
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 0;
+    width: 100%;
+    outline: 0;
+    color: white;
+    background-color: #0083ff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.add-user-btn:hover{
+    background-color: #0068c9;
+}
+.add-user-radio{
+    display: flex;
+    margin: 20px 0;
+}
+.add-user-g1{
+    padding: 0 30px;
+}
+.g1-name{
+    padding-left: 10px;
+}
+.all-user-btn{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 1px #e3e0e0;
+    color: #df06df;
+    padding: 10px;
+    cursor: pointer;
+}

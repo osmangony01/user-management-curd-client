@@ -1,10 +1,10 @@
-
+import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div>
-            this is navbar
-        </div>
+        <nav className='navbar'>
+           User Management System
+        </nav>
     );
 };
 

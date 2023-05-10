@@ -1,0 +1,43 @@
+.home{
+    padding: 50px 150px;
+}
+.new-user{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 1px #e3e0e0;
+    color: #df06df;
+    padding: 10px;
+    cursor: pointer;
+}
+.user-table{
+    margin-top: 20px;
+    width: 100%;
+    /* border-collapse:collapse; */
+}
+.user-thead{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+.user-thead th{
+    padding: 10px 0;
+   
+}
+.user-tbody{
+    text-align: center;
+}
+.active-btn{
+    padding: 5px;
+    margin: 5px 10px;
+    background-color: white;
+    color: #5008ff;
+    border: 1px solid #b89ef9;
+    border-radius: 4px;
+}
+.active-btn:hover{
+    background-color:  #e2deef;
+   
+}
